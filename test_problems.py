@@ -80,3 +80,23 @@ def test_largest_subsequent_difference_single_element(problems):
 def test_largest_subsequent_difference_empty(problems):
     nums_list = []
     assert problems.largest_subsequent_difference(nums_list) == 0  # No pairs
+
+def test_best_time_to_buy_and_sell_stock_basic(problems):
+    prices = [7, 1, 5, 3, 6, 4]
+    assert problems.best_time_to_buy_and_sell_stock(prices) == 5  # Buy at 1, sell at 6
+
+def test_best_time_to_buy_and_sell_stock_no_profit(problems):
+    prices = [7, 6, 4, 3, 1]
+    assert problems.best_time_to_buy_and_sell_stock(prices) == 0  # No profit possible
+
+def test_best_time_to_buy_and_sell_stock_single_day(problems):
+    prices = [5]
+    assert problems.best_time_to_buy_and_sell_stock(prices) == 0  # Only one price
+
+def test_best_time_to_buy_and_sell_stock_empty(problems):
+    prices = []
+    assert problems.best_time_to_buy_and_sell_stock(prices) == 0  # No prices
+
+def test_best_time_to_buy_and_sell_stock_multiple_profits(problems):
+    prices = [2, 4, 1, 10]
+    assert problems.best_time_to_buy_and_sell_stock(prices) == 9  # Buy at 1, sell at 10
