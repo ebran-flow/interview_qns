@@ -2,7 +2,7 @@ class Problems:
     def __init__(self):
         pass
 
-    def returnTrue(self):
+    def send_back_true(self):
         return True
     
     def main(self):
