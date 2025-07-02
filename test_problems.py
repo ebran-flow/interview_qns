@@ -60,3 +60,23 @@ def test_reverse_number_pattern_1(problems):
         "1"
     ]
     assert problems.reverse_number_pattern(1) == expected
+
+def test_largest_subsequent_difference_basic(problems):
+    nums_list = [2, 5, 8, 1, 9, 3, 7]
+    assert problems.largest_subsequent_difference(nums_list) == 8  # 9 - 1
+
+def test_largest_subsequent_difference_sorted(problems):
+    nums_list = [1, 2, 3, 4, 5]
+    assert problems.largest_subsequent_difference(nums_list) == 1  # 2 - 1, 3 - 2, etc.
+
+def test_largest_subsequent_difference_negative(problems):
+    nums_list = [-10, -3, -1, -20]
+    assert problems.largest_subsequent_difference(nums_list) == 19  # -1 - (-20)
+
+def test_largest_subsequent_difference_single_element(problems):
+    nums_list = [5]
+    assert problems.largest_subsequent_difference(nums_list) == 0  # No pairs
+
+def test_largest_subsequent_difference_empty(problems):
+    nums_list = []
+    assert problems.largest_subsequent_difference(nums_list) == 0  # No pairs
