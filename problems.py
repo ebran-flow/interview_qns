@@ -16,3 +16,13 @@ class Problems:
     # Output: ["Seattle", "Memphis", "Hawaii", "New York", "Washington"]
     def find_itinerary(self, tickets):
         pass  #
+
+    # Write a program to use for loop to print the following reverse number pattern
+
+    # 5 4 3 2 1 
+    # 4 3 2 1 
+    # 3 2 1 
+    # 2 1 
+    # 1
+    def reverse_number_pattern(self, n):
+        pass

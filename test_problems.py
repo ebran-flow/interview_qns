@@ -36,3 +36,27 @@ def test_find_itinerary_single_ticket(problems):
     ]
     expected = ["A", "B"]
     assert problems.find_itinerary(tickets) == expected
+
+def test_reverse_number_pattern_5(problems):
+    expected = [
+        "5 4 3 2 1",
+        "4 3 2 1",
+        "3 2 1",
+        "2 1",
+        "1"
+    ]
+    assert problems.reverse_number_pattern(5) == expected
+
+def test_reverse_number_pattern_3(problems):
+    expected = [
+        "3 2 1",
+        "2 1",
+        "1"
+    ]
+    assert problems.reverse_number_pattern(3) == expected
+
+def test_reverse_number_pattern_1(problems):
+    expected = [
+        "1"
+    ]
+    assert problems.reverse_number_pattern(1) == expected
